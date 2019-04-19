@@ -143,6 +143,7 @@ outline: none!important;
   letter-spacing: 0.05rem;
   margin-left: 1.5rem;
 }
+
 #resumeTit {
   font-size: 2rem;
   font-weight: 100!important;
@@ -378,10 +379,10 @@ li {
 .demo {
   width: 100%;
   background-color: white;
-  font-size: 0.75rem;
-  font-weight: 400;
-  padding: 1rem;
-  text-transform: none;
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
+  padding: 1rem !important;
+  text-transform: none !important;
 
 }
 
