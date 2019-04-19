@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Austin Chow</title>
+	<title>Austin Chow | Software Engineer</title>
 	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/fixed.css">
@@ -13,34 +13,38 @@
 
 <!-- Start Home Section -->
 <div id="home">
-
   <!-- Navigation -->
-  <nav class ="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
-    <a class ="navbar-brand" href="#">
-      <img src="img/ac.png" style="height:2.5rem;">
-      <button class="navbar-toggler type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-     </button>
+  <nav id ="nav-main" class ="navbar navbar-right navbar-light bg-light fixed-top">
+		 <!--bg-light fixed-top navbar-expand-md"> <!-- fixed-top navbar-expand-md  -->
+    <a class ="navbar-brand" href="#"></a>
+    <img src="img/blank.png" style="height:5rem;">
+
+		<div class="title mx-auto">
+			AUSTIN CHOW
+		</div>
+		<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>
+		</button>
 
       <div class="collapse navbar-collapse" id="navbarResponsive" style="color: black;">
-        <ul class="navbar-nav ml-auto" <!-- md or mx -->
-            <li class = "nav-item">
+        <ul class="navbar-nav ml-auto">
+            <li class = "nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#home">Home</a>
             </li>
-            <li class = "nav-item">
+            <li class = "nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class = "nav-item">
+            <li class = "nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
-            <li class = "nav-item">
+            <li class = "nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#photography">Photography</a>
             </li>
-            <li class = "nav-item">
+            <li class = "nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
       </div>
-    </a>
+	</div>
   </nav>
   <!-- End Navigation-->
 
@@ -53,8 +57,8 @@
   </div>
 
   <div class ="caption text-left">
-    <h3>Hi, I'm Austin</h3>
-    <h4>A design minded software engineer focused on the intersection of AI and HCI</h4>
+    <h3>Hello!</h3>
+    <div id="aboutme">I am a design minded software engineer focused on the intersection of AI and HCI</div>
   </div>
 
   <!-- End landing page section -->
@@ -65,7 +69,7 @@
 <div id="about" class="offset">
   <div class="row">
     <div class="col-4 category" >Background</div>
-    <div class="col-8 text "> I'm currently a junior at Stanford University, majoring in Computer Science with a specialization in Artifical Intelligence. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications. <br><br>
+    <div class="col-8 text "> I'm currently a junior at Stanford University, majoring in Computer Science with a specialization in Artifical Intelligence. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own mobile and web applications. <br><br>
       As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. <br><br>
       When I'm not in front of a computer screen, you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
     </div>
@@ -73,7 +77,7 @@
 
   <div class="row">
     <div class="col-4 category" >Skills</div>
-      <!--
+
         <div class="col skills">
           <div class = "type">Languages</div>
           <div class = "entry">Python</div>
@@ -85,7 +89,7 @@
           <div class = "entry">Swift</div>
         </div>
         <div class="col skills">
-          <div class = "type">Framworks</div>
+          <div class = "type">Frameworks</div>
           <div class = "entry">Flask</div>
           <div class = "entry">Node</div>
           <div class = "entry">Angular</div>
@@ -109,102 +113,37 @@
           <div class = "entry">Prototyping</div>
           <div class = "entry">User Testing</div>
         </div>
--->
-
-      <div class = col-8>
-        <div class="row bars">
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="progress-wrap">
-              <h5>Python</h5>
-              <div class="progress">
-                <div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
-                  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                  <span>80%</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-            <div class="progress-wrap">
-              <h5>C++</h5>
-              <div class="progress">
-                <div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                  <span>70%</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="progress-wrap">
-              <h5>Javascript</h5>
-              <div class="progress">
-                <div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                  <span>70%</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-            <div class="progress-wrap">
-              <h5>Java</h5>
-              <div class="progress">
-                <div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  <span>60%</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-            <div class="progress-wrap">
-              <h5>HTML / CSS</h5>
-              <div class="progress">
-                <div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-                  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                  <span>80%</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="progress-wrap">
-              <h5>Swift</h5>
-              <div class="progress">
-                <div class="progress-bar color-6" role="progressbar" aria-valuenow="65"
-                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  <span>60%</span>
-                  </div>
-              </div>
-            </div>
-          </div>
-      </div>
   </div>
 </div>
-
-
-
-
-
-  <div class="row">
-    <div class="col-4 category" >Experience</div>
-    <div class="col-8 text "> I'm currently a junior at Stanford University, majoring in Computer Science with a specialization in Artifical Intelligence. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications. <br><br>
-      As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. <br><br>
-      When I'm not in front of a computer screen, you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
-    </div>
-  </div>
-
-
-  </div>
 
 <!-- End About Section -->
 
 <!--  Portfilio Section -->
 <div id="portfolio" class="offset">
+
+<div class="row">
+	<div class="col-4 category" >Background</div>
+	<div class="col-8 text "> I'm currently a junior at Stanford University, majoring in Computer Science with a specialization in Artifical Intelligence. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications. <br><br>
+		As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. <br><br>
+		When I'm not in front of a computer screen, you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-4 category" >Background</div>
+	<div class="col-8 text "> I'm currently a junior at Stanford University, majoring in Computer Science with a specialization in Artifical Intelligence. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications. <br><br>
+		As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. <br><br>
+		When I'm not in front of a computer screen, you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-4 category" >Background</div>
+	<div class="col-8 text "> I'm currently a junior at Stanford University, majoring in Computer Science with a specialization in Artifical Intelligence. On campus, I am a part of the CS + Social Good Studio teaching team, in which I lead a class of 30 students in creating their own social good projects, ranging from mobile to web applications. <br><br>
+		As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with visuals to create a highly aesthetic product. My goal is to always build scalable and efficient applications while providing engaging user experiences. <br><br>
+		When I'm not in front of a computer screen, you can find me playing basketball, taking photos, or crossing off another item on my bucket list!
+	</div>
+</div>
 
 
 </div>
@@ -227,6 +166,11 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script src="js/main.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 <!--- End of Script Source Files -->
 
 </body>

@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
 
+html {
+  /*scroll-behavior: smooth;*/
+}
 body {
   overflow-x: hidden;
   font-family: 'Source Sans Pro', sans-serif;
@@ -13,26 +17,56 @@ body {
   font-weight: 400;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
-  background-color: white !important;
+  background-color: #fafafa !important;
+  /*min-height: 6rem;*/
+
 }
 
-.navbar-brand img {
+.navbar-toggler.toggler-example {
+cursor: pointer;
+border:0px;
+outline: none!important;
+  box-shadow: none;
+  border:0px;
+}
 
+
+.navbar-toggler.toggler-example:focus, .navbar-toggler.toggler-example:active, {
+cursor: pointer;
+border:0px;
+outline: none!important;
+  box-shadow: none;
+  border:0px;
+}
+
+.navbar-light .navbar-toggler-icon{
+  outline: none!important;
+  border:0px;
 }
 
 .navbar-nav li {
   padding-right: 0.7rem;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   color: #a9a9a9;
-  padding-top: 0.5rem;
+
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-brand {
+    /*width:80% !important;*/
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
   color: black;
 }
+
 
 /* Start of landing page --*/
 .home-inner {
@@ -57,12 +91,12 @@ body {
   padding-bottom: 1rem;
 }
 
-.caption h4 {
+#aboutme {
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 100!important;
   color: #2E2D33;
   padding-bottom: 1rem;
-  width: 30rem;
+  width: 29rem;
 }
 
 .btn-lg {
@@ -81,9 +115,13 @@ body {
   }
 
 /*-- Start of About Page --*/
-.about {
-  background-color: #171c28;
-  color: white;
+#about {
+  padding-top: 2rem;
+  background-color: white;
+  /*#C26868;*/
+  background-color: #4C5364 !important; /*4C5364;  171c28; */
+  color: black;
+
 }
 
 .row {
@@ -97,7 +135,7 @@ body {
 }
 
 .category{
-  color: #171c28;
+  color: #007bff; /*#171c28;*/
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -115,81 +153,6 @@ body {
 .js .animate-box {
   opacity: 0; }
 
-.progress {
-  height: 6px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #f2f3f7;
-  overflow: visible; }
-
-.progress-bar {
-  background: #2c98f0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-size: 12px;
-  line-height: 1.2;
-  color: #000;
-  font-weight: 600;
-  text-align: right;
-  position: relative;
-  overflow: visible;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px; }
-  .progress-bar:after {
-    position: absolute;
-    top: -2px;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    content: '';
-    background: #2c98f0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
-  .progress-bar span {
-    position: absolute;
-    top: -22px;
-    right: 0; }
-  .progress-bar.color-1 {
-    background: #2c98f0; }
-    .progress-bar.color-1:after {
-      background: #2c98f0; }
-    .progress-bar.color-1 span {
-      color: #2c98f0; }
-  .progress-bar.color-2 {
-    background: #ec5453; }
-    .progress-bar.color-2:after {
-      background: #ec5453; }
-    .progress-bar.color-2 span {
-      color: #ec5453; }
-  .progress-bar.color-3 {
-    background: #f9bf3f; }
-    .progress-bar.color-3:after {
-      background: #f9bf3f; }
-    .progress-bar.color-3 span {
-      color: #f9bf3f; }
-  .progress-bar.color-4 {
-    background: #a84cb8; }
-    .progress-bar.color-4:after {
-      background: #a84cb8; }
-    .progress-bar.color-4 span {
-      color: #a84cb8; }
-  .progress-bar.color-5 {
-    background: #2fa499; }
-    .progress-bar.color-5:after {
-      background: #2fa499; }
-    .progress-bar.color-5 span {
-      color: #2fa499; }
-  .progress-bar.color-6 {
-    background: #4054b2; }
-    .progress-bar.color-6:after {
-      background: #4054b2; }
-    .progress-bar.color-6 span {
-      color: #4054b2; }
-
 
 .type {
   font-weight: 600;
@@ -199,7 +162,14 @@ body {
   padding-bottom: 0.5rem;
 }
 
+.entry {
+  letter-spacing: 0.1rem;
+}
 
+.text {
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
 
 .btn-secondary {
   border-width: medium;
