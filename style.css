@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Pro:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
 html {
   /*scroll-behavior: smooth;*/
 }
@@ -91,7 +92,7 @@ outline: none!important;
   padding-bottom:0.25rem;
 }
 .navbar-nav {
-  padding-top: 1rem;
+  padding-top: 0.75rem;
 }
 /* Start of landing page --*/
 .home-inner {
@@ -125,6 +126,31 @@ outline: none!important;
   letter-spacing: 0.05rem;
 }
 
+#description {
+  font-size: 2rem;
+  font-weight: 100!important;
+  color: #2E2D33;
+  letter-spacing: 0.05rem;
+  position:relative;
+  bottom:0.5rem;
+}
+#skillz {
+  font-size: 2rem;
+  font-weight: 100!important;
+  color: #2E2D33;
+  padding-bottom: 1rem;
+  width: 29rem;
+  letter-spacing: 0.05rem;
+  margin-left: 1.5rem;
+}
+#resumeTit {
+  font-size: 2rem;
+  font-weight: 100!important;
+  color: #2E2D33;
+  padding-bottom: 1rem;
+  width: 29rem;
+  letter-spacing: 0.05rem;
+}
 #touch{
   background-color: transparent;
   border-radius: 5px;
@@ -169,7 +195,7 @@ outline: none!important;
 /*-- Start of About Page --*/
 #about {
   padding-top: 2rem;
-  background-color: white !important;
+  background-color: #DDE5E6 !important;
   /*#C26868;*/
   background-color: #4C5364; /*4C5364;  171c28; fec8c2 */
   color: black;
@@ -187,14 +213,15 @@ outline: none!important;
 }
 
 .category{
-  color: #007bff; /*#171c28;*/
-  font-weight: 700;
+  color: #35656E; /*#171c28;*/
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  font-size: 1.2rem;
 }
 
 .skills {
-  padding: 1rem;
+  padding-top: 1.5rem;
 }
 
 .progress-wrap h5 {
@@ -209,19 +236,27 @@ outline: none!important;
 .type {
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: darkgrey;
   padding-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .entry {
-  letter-spacing: 0.1rem;
-}
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: black;}
 
 .text {
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  color: #fafafa;
+  letter-spacing: 0.05em;
+  font-weight: 100;
+  font-size: 1.1rem;
+  color: black;
+  font-family: 'Karla', sans-serif;
+
 
 }
 
@@ -243,7 +278,97 @@ outline: none!important;
   color: white;
 }
 
+/* Start of resume section */
 
+#resume {
+  padding-top: 2rem;
+  background-color: #FEDFC2 !important;
+
+  color: black;
+}
+
+#resumeTitle {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.section-tagline {
+  font-family: 'Open Sans Pro', sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  font-size: 0.5rem;
+  letter-spacing: 0.3em;
+  position: relative;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fafafa;
+}
+
+.resumeText{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    text-transform: none;
+
+}
+
+p
+{
+  margin:0;
+  padding:0;
+}
+
+#name {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+#year {
+  font-style: italic;
+}
+
+#coursework {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+ul.resumeText {
+  list-style-type:circle;
+  padding-top: 0.5rem;
+}
+
+li {
+  margin-top: 0.2rem;
+}
+
+.btn-group {
+  margin-left: 2rem;
+}
+.language {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #b38253; /*#f5f5f5;*/
+  color: #b38253;
+  font-size: 0.7rem;
+  width: 5rem;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.iconResume {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 10rem;
+  left: -5rem;
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
