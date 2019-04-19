@@ -283,7 +283,7 @@ outline: none!important;
 #resume {
   padding-top: 2rem;
   background-color: #FEDFC2 !important;
-
+  padding-bottom: 3rem;
   color: black;
 }
 
@@ -347,7 +347,8 @@ li {
 }
 
 .btn-group {
-  margin-left: 2rem;
+  margin-left: 0rem;
+  margin-top: 1rem;
 }
 .language {
   background-color: transparent;
@@ -367,7 +368,56 @@ li {
   height: 4rem;
   position: absolute;
   top: 10rem;
-  left: -5rem;
+  left: -5.5rem;
+}
+
+#portfolio {
+  background-color: #eee;
+}
+
+#demo {
+  width: 100%;
+  background-color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 1rem;
+  text-transform: none;
+
+}
+
+/*-- Photography */
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
 }
 /*============ BOOTSTRAP BREAK POINTS:
 
